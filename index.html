@@ -44,8 +44,8 @@
             text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.7); /* Sombreado fuerte en negro */
         }
 
-        /* Buttons */
-        .button {
+        /* Botón en el header */
+        .button-header {
             background: #007BFF;
             color: white;
             padding: 12px 30px;
@@ -56,36 +56,48 @@
             margin-top: 20px;
             border-radius: 8px;
             font-size: 1.2em;
+            transition: background-color 0.3s; /* Transición suave al cambiar de color */
         }
 
-        .button:hover {
+        .button-header:hover {
             background: #0056b3;
         }
 
-        /* Navigation */
-        nav {
-            background-color: #333;
-            text-align: center;
-            padding: 10px 0;
+        /* Estilo para el menú de navegación horizontal */
+        #navbar {
+            background-color: #000; /* Fondo negro para el menú */
         }
 
-        nav a {
-            color: white;
-            text-decoration: none;
-            padding: 15px 20px;
-            margin: 0 15px;
+        #navbar ul {
+            list-style: none; /* Elimina los puntos de la lista */
+            padding: 0;
+            margin: 0;
+            text-align: center; /* Centra los elementos */
+            display: flex; /* Hace que los elementos se alineen en línea */
+            justify-content: center; /* Centra los elementos horizontalmente */
+        }
+
+        #navbar ul li {
+            margin: 0 15px; /* Ajusta el espacio entre los elementos del menú */
+        }
+
+        #navbar ul li a {
+            text-decoration: none; /* Elimina el subrayado de los enlaces */
+            color: white; /* Color de texto blanco */
+            font-size: 1.1em; /* Tamaño de fuente */
+            padding: 10px 15px; /* Espaciado dentro de los enlaces */
             display: inline-block;
-            font-size: 1.1em;
+            transition: background-color 0.3s; /* Transición suave al cambiar de color */
         }
 
-        nav a:hover {
-            background-color: #007BFF;
+        #navbar ul li a:hover {
+            background-color: #555; /* Color de fondo gris oscuro al pasar el mouse */
         }
 
         /* Estilo para la imagen en la sección de presentación */
         .imagen-presentacion {
             text-align: center;
-            margin-bottom: 50px;
+            margin-bottom: 20px; /* Ajusta el espacio debajo de la imagen */
         }
 
         .img-presentacion {
@@ -164,7 +176,6 @@
         input[type="submit"]:hover {
             background-color: #0056b3;
         }
-
         /* Responsiveness */
         @media (max-width: 768px) {
             header h1 {
@@ -226,13 +237,15 @@
 <header>
     <h1>Dios es el fundador, yo soy el instrumento</h1>
     <p>Acompañando a personas y empresas a transformar sus vidas y cumplir su propósito divino.</p>
-    <a href="#sobre" class="button">Descubre más sobre mí</a>
-</header>
+   </header>
 
-<nav>
-    <a href="#sobre">Sobre Mí</a>
-    <a href="servicios.html">Servicios</a>
-    <a href="contacto.html">Contacto</a>
+<nav id="navbar">
+    <ul>
+        <li><a href="index.html">Sobre mí</a></li>
+        <li><a href="servicios.html">Servicios</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+        <li><a href="blog.html">Blog</a></li>
+    </ul>
 </nav>
 
 <section id="presentacion">

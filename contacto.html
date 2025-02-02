@@ -19,8 +19,8 @@
 
         /* Menú de navegación */
         nav {
-            background-color: #007BFF;
-            padding: 10px 20px;
+            background-color: #000; /* Fondo negro */
+            padding: 8px 20px; /* Menú más estrecho */
             text-align: center;
         }
 
@@ -33,7 +33,7 @@
         }
 
         nav ul li {
-            margin-right: 30px;
+            margin-right: 25px; /* Menos espacio entre los elementos */
         }
 
         nav ul li a {
@@ -41,7 +41,7 @@
             color: white;
             font-size: 1.1em;
             font-weight: bold;
-            padding: 10px 15px;
+            padding: 8px 15px;
             display: inline-block;
         }
 
@@ -51,26 +51,13 @@
         }
 
         header {
-            background: url('img/contacto.jpg') no-repeat center top/cover;
+            background: url('img/contacto.svg') no-repeat center top/cover;
             text-align: center;
             color: white;
             padding: 120px 20px;
             background-size: cover;
             background-position: center;
             height: 150px;
-        }
-
-        header h1 {
-            font-size: 3.5em;
-            margin: 0;
-            font-weight: bold;
-            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
-        }
-
-        header p {
-            font-size: 1.3em;
-            margin-top: 10px;
-            font-style: italic;
         }
 
         section {
@@ -154,14 +141,6 @@
                 height: 130px;
             }
 
-            header h1 {
-                font-size: 2.5em;
-            }
-
-            header p {
-                font-size: 1.1em;
-            }
-
             section {
                 padding: 40px 10px;
             }
@@ -180,19 +159,19 @@
 </head>
 <body>
 
-<!-- Menú de navegación -->
-<nav>
+<header>
+    <!-- No texto en el header, solo la imagen de fondo -->
+</header>
+
+<!-- Menú de navegación debajo del cabezal -->
+<nav id="navbar">
     <ul>
         <li><a href="index.html">Sobre mí</a></li>
         <li><a href="servicios.html">Servicios</a></li>
         <li><a href="contacto.html">Contacto</a></li>
+        <li><a href="blog.html">Blog</a></li>
     </ul>
 </nav>
-
-<header>
-    <h1>Contacto</h1>
-    <p>Estamos aquí para ayudarte en tu camino hacia la transformación personal y empresarial con propósito divino.</p>
-</header>
 
 <section id="contact">
     <h2>Contáctame</h2>
