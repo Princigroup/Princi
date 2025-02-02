@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ponte en contacto con Princi Pinillos para más información sobre servicios de coaching, liderazgo cristiano, consultoría y más.">
+    <meta name="keywords" content="contacto, coaching, liderazgo cristiano, consultoría empresarial, mentoría, formación">
+    <meta name="author" content="Princi Pinillos">
+    <title>Contacto - Princi Pinillos</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        /* Menú de navegación */
+        nav {
+            background-color: #007BFF;
+            padding: 10px 20px;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin-right: 30px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-size: 1.1em;
+            font-weight: bold;
+            padding: 10px 15px;
+            display: inline-block;
+        }
+
+        nav ul li a:hover {
+            background-color: #0056b3;
+            border-radius: 5px;
+        }
+
+        header {
+            background: url('img/contacto.jpg') no-repeat center top/cover;
+            text-align: center;
+            color: white;
+            padding: 120px 20px;
+            background-size: cover;
+            background-position: center;
+            height: 150px;
+        }
+
+        header h1 {
+            font-size: 3.5em;
+            margin: 0;
+            font-weight: bold;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+        }
+
+        header p {
+            font-size: 1.3em;
+            margin-top: 10px;
+            font-style: italic;
+        }
+
+        section {
+            padding: 60px 20px;
+            text-align: center;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        section h2 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            color: #007BFF;
+        }
+
+        section p {
+            font-size: 1.2em;
+            margin-bottom: 30px;
+        }
+
+        .formulario-contacto {
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .formulario-contacto input,
+        .formulario-contacto textarea {
+            width: 100%;
+            padding: 15px;
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            font-size: 1.1em;
+        }
+
+        .formulario-contacto textarea {
+            height: 150px;
+        }
+
+        .formulario-contacto button {
+            background-color: #007BFF;
+            color: white;
+            padding: 12px 30px;
+            border: none;
+            cursor: pointer;
+            border-radius: 8px;
+            font-size: 1.2em;
+        }
+
+        .formulario-contacto button:hover {
+            background-color: #0056b3;
+        }
+
+        .contacto-info {
+            margin-top: 50px;
+            text-align: center;
+        }
+
+        .contacto-info p {
+            font-size: 1.1em;
+            margin-bottom: 15px;
+        }
+
+        .contacto-info a {
+            color: #007BFF;
+            text-decoration: none;
+        }
+
+        .contacto-info a:hover {
+            text-decoration: underline;
+        }
+
+        /* Asegurarse que el formulario sea responsivo */
+        @media (max-width: 768px) {
+            header {
+                padding: 100px 20px;
+                height: 130px;
+            }
+
+            header h1 {
+                font-size: 2.5em;
+            }
+
+            header p {
+                font-size: 1.1em;
+            }
+
+            section {
+                padding: 40px 10px;
+            }
+
+            nav ul {
+                flex-direction: column;
+                margin-top: 10px;
+            }
+
+            nav ul li {
+                margin-bottom: 10px;
+                margin-right: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<!-- Menú de navegación -->
+<nav>
+    <ul>
+        <li><a href="index.html">Sobre mí</a></li>
+        <li><a href="servicios.html">Servicios</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+    </ul>
+</nav>
+
+<header>
+    <h1>Contacto</h1>
+    <p>Estamos aquí para ayudarte en tu camino hacia la transformación personal y empresarial con propósito divino.</p>
+</header>
+
+<section id="contact">
+    <h2>Contáctame</h2>
+    <p>Si tienes alguna pregunta o deseas reservar una sesión, por favor, completa el formulario y me pondré en contacto contigo lo antes posible.</p>
+
+    <div class="formulario-contacto">
+        <form action="#" method="POST">
+            <input type="text" name="nombre" placeholder="Tu nombre" required>
+            <input type="email" name="email" placeholder="Tu correo electrónico" required>
+            <textarea name="mensaje" placeholder="Tu mensaje" required></textarea>
+            <button type="submit">Enviar mensaje</button>
+        </form>
+    </div>
+
+    <div class="contacto-info">
+        <p>También puedes contactarme a través de:</p>
+        <p><strong>Correo electrónico:</strong> <a href="mailto:contacto@princigroup.com">contacto@princigroup.com</a></p>
+        <p><strong>Teléfono:</strong> +34 123 456 789</p>
+    </div>
+</section>
+
+</body>
+</html>
